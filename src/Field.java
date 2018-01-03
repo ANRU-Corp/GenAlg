@@ -24,6 +24,19 @@ public class Field {
         this(field.isConstant(),field.getDigit(),field.getPossibleDigits());
     }
 
+    /**
+     * interfejs
+     *
+     */
+    @Override
+    public String toString() {
+        return ""+digit;
+    }
+
+    /**
+     * chcemy zeby przechowywało mozliwe liczby do wstawienia
+     *
+     */
     public List<Integer> getPossibleDigits() {
         return possibleDigits;
     }
